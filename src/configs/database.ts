@@ -1,0 +1,9 @@
+const DATABASE_NAME = '@cittavox';
+
+const COLLECTION_USERS = `${DATABASE_NAME}:user`;
+const COLLECTION_COMPLAINT = `${DATABASE_NAME}:complaint`;
+
+export {
+  COLLECTION_USERS,
+  COLLECTION_COMPLAINT
+}
