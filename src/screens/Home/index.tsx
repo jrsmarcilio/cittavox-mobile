@@ -1,14 +1,13 @@
-import React, { useState, useCallback } from 'react';
-import { View, FlatList } from 'react-native';
-import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useState } from 'react';
+import { FlatList, SafeAreaView, StyleSheet, View, Text } from 'react-native';
 
-import { styles } from './styles';
-import { COLLECTION_COMPLAINT } from '../../configs/database';
 import { Background } from '../../components/Background';
 import { Profile } from '../../components/Profile';
+import { Search } from '../../components/Search';
+import { BannerWelcome } from '../../components/BannerWelcome';
 
-import Notify from '../../assets/svg/notify.svg';
+import { defaultOptions } from '../../utils/homeOptions';
+import { styles } from './styles';
 
 type ComplaintProps = {
   id: string;
@@ -36,6 +35,7 @@ export function Home() {
   // const [loading, setLoading] = useState(true);
   // const [complaints, setComplaints] = useState<ComplaintProps[]>([]);
 
+
   // const navigation = useNavigation();
 
   // async function loadComplaints() {
@@ -59,10 +59,26 @@ export function Home() {
     <Background>
       <View style={styles.header}>
         <Profile />
-        {/* <Notify
-          width={40}
-          height={40}
-        /> */}
+        <Search />
+        <BannerWelcome />
+
+        <SafeAreaView style={styles.options}>
+          <FlatList
+            data={defaultOptions.data}
+            keyExtractor={item => String(item.id)}
+            numColumns={2}
+            columnWrapperStyle={styles.rowWrapper}
+            renderItem={({ item }) => {
+              return (
+                <View key={item.id} style={styles.item}>
+                  <item.IconSvg width={34} height={34} />
+                  <Text style={styles.text}>{item.name}</Text>
+                </View>
+              );
+            }}
+          />
+        </SafeAreaView>
+
       </View>
     </Background>
   );

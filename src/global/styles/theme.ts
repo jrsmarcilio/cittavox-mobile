@@ -1,17 +1,13 @@
 export const theme = {
   colors: {
-    primary: '#E51C44',
-    
-    secondary100: '#0A1033',
-    secondary90: '#0D133D',    
-    secondary80: '#0E1647',
-    secondary85: '#171F52',
-    secondary70: '#1B2565', 
-    secondary60: '#1B2565',
-    secondary50: '#243189', 
-    secondary40: '#1D2766', 
-    secondary30: '#495BCC', 
-   
+    primary: '#2486C4',
+
+    secondary30: '#276678',
+    secondary20: '#1687A7',
+    secondary10: '#D3E0EA',
+    secondary0: '#F6F5F5',
+    // Pallete in https://colorhunt.co/palette/f6f5f5d3e0ea1687a7276678
+
     overlay: 'rgba(0,0,0,0.7)',
     highlight: '#ABB1CC',
     heading: '#DDE3F0',

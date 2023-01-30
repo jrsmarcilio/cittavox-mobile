@@ -5,22 +5,28 @@ import { Image } from 'react-native';
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 
+import { IconSvg } from '../../@types/default';
+
 type AvatarProps = {
-  urlImage: string;
+  urlImage?: string;
+  IconSvg: IconSvg
 }
 
-export function Avatar({ urlImage }: AvatarProps) {
-  const { secondary50, secondary70 } = theme.colors;
+export function Avatar({ urlImage, IconSvg }: AvatarProps) {
+  const { secondary20, secondary30 } = theme.colors;
 
   return (
     <LinearGradient
       style={styles.container}
-      colors={[secondary50, secondary70]}
+      colors={[secondary20, secondary30]}
     >
-      <Image
-        source={{ uri: urlImage }}
-        style={styles.avatar}
-      />
+      {
+        urlImage ? (
+          <Image source={{ uri: urlImage }} style={styles.avatar} />
+        ) : (
+          <IconSvg width='28' height='28' />
+        )
+      }
     </LinearGradient>
   )
 

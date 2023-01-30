@@ -1,0 +1,1 @@
+export type IconSvg = React.FC<SvgProps>;
