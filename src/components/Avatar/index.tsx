@@ -13,18 +13,15 @@ type AvatarProps = {
 }
 
 export function Avatar({ urlImage, IconSvg }: AvatarProps) {
-  const { secondary20, secondary30 } = theme.colors;
+  const { secondary0, secondary10 } = theme.colors;
 
   return (
-    <LinearGradient
-      style={styles.container}
-      colors={[secondary20, secondary30]}
-    >
+    <LinearGradient style={styles.container} colors={[secondary10, secondary0]}>
       {
         urlImage ? (
           <Image source={{ uri: urlImage }} style={styles.avatar} />
         ) : (
-          <IconSvg width='28' height='28' />
+          <IconSvg width='32' height='32' />
         )
       }
     </LinearGradient>

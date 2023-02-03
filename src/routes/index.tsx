@@ -38,7 +38,7 @@ export function Routes() {
       onReady={onLayoutRootView}
     >
       {/* //  { user.id ? <AppRoutes /> : <SignIn /> } */}
-      <TabNavigation />
+      <AppRoutes />
     </NavigationContainer>
   )
 }

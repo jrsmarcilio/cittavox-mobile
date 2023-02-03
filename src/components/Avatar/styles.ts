@@ -4,10 +4,10 @@ export const styles = StyleSheet.create({
   container: {
     width: 49,
     height: 49,
-    borderRadius: 8,
+    borderRadius: 28,
     alignItems: 'center',
     justifyContent: 'center',
-    marginHorizontal: 22
+    marginHorizontal: 22,
   },
   avatar: {
     width: 46,

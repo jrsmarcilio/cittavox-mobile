@@ -9,7 +9,9 @@ import history from './svg/history.svg'
 import inloco from './svg/inloco.svg'
 import home from './svg/home.svg'
 import location from './svg/location.svg'
+import locationFill from './svg/location-fill.svg'
 import pastTime from './svg/past-time.svg'
+import circle from './svg/circle.svg'
 
 export const SVG = {
   Exclamation: exclamation,
@@ -22,5 +24,7 @@ export const SVG = {
   Inloco: inloco,
   Home: home,
   Location: location,
-  PastTime: pastTime
+  LocationFill: locationFill,
+  PastTime: pastTime,
+  Circle: circle,
 }

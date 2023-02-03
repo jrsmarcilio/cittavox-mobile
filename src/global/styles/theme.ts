@@ -1,3 +1,5 @@
+import { Platform } from 'react-native';
+
 export const theme = {
   colors: {
     primary: '#2486C4',
@@ -16,6 +18,8 @@ export const theme = {
 
     discord: '#7289da',
   },
+
+  tabBarHeight: Platform.OS === 'ios' ? 100 : 70,
 
   fonts: {
     text400: 'Inter_400Regular',
