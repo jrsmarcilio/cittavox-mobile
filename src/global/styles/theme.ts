@@ -24,5 +24,6 @@ export const theme = {
   fonts: {
     text400: 'Inter_400Regular',
     text500: 'Inter_500Medium',
+    fredokaOne400: 'FredokaOne_400Regular'
   }
 };

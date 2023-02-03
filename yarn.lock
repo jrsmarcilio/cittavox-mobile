@@ -1062,6 +1062,11 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+"@expo-google-fonts/fredoka-one@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/fredoka-one/-/fredoka-one-0.2.2.tgz#1414d37117855573c3ee02452624488f6f924c9f"
+  integrity sha512-X3OgIHYgLKYmYFXhkEK6rJPyBuwmidC0vH+1/fnLsKoNtsbYx/a50YJM9B+5p+qfnoC2e9eBa+gcI0RpWcnuBA==
+
 "@expo-google-fonts/inter@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.2.2.tgz#bd5624be6c92e7621aa9ddb5bd72757604729121"

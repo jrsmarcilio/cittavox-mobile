@@ -4,9 +4,7 @@ import { SVG } from '../assets';
 import { theme } from '../global/styles/theme';
 import { Home } from '../screens/Home';
 
-import Location from '../assets/svg/location.svg';
-import { View } from 'react-native';
-import { SVGComponent } from '../components/Svg';
+import { Starter } from '../screens/Starter';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,10 +50,10 @@ export function AppRoutes() {
         }}
       />
       <Tab.Screen
-        name="Perfil"
+        name="Home"
         component={Home}
         options={{
-          tabBarLabel: 'Perfil',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
             <SVG.User width={size} height={size} fill={color} />
           ),
