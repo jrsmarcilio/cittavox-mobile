@@ -9,12 +9,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 72,
-    fontWeight: 'bold',
-    lineHeight: 72,
-    marginTop: 10,
+    fontFamily: theme.fonts.fredokaOne400,
+    fontWeight: '400',
+    fontSize: 64,
+    lineHeight: 77,
     color: theme.colors.primary,
-    fontFamily: theme.fonts.fredokaOne400
   },
   subTitle: {
     fontSize: 16,
