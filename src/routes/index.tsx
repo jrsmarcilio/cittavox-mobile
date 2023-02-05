@@ -8,6 +8,7 @@ import { Nunito_800ExtraBold } from '@expo-google-fonts/nunito';
 
 import { Starter } from '../screens/Starter';
 import { Login } from '../screens/Login';
+import { Register } from '../screens/Register';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -42,7 +43,7 @@ export function Routes() {
     <NavigationContainer
       onReady={onLayoutRootView}
     >
-      <Login />
+      <Register />
       {/* <AppRoutes /> */}
     </NavigationContainer>
   )
