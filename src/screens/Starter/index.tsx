@@ -3,12 +3,12 @@ import { Image, Pressable, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
-// import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack';
-// import { RootStackParamList } from '../../@types/navigate';
+import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../../@types/navigate';
 import { theme } from '../../global/styles/theme';
 
-// type StarterScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Starter'>;
-// type StarterProps = { navigation: StarterScreenNavigationProp; }
+type StarterScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Starter'>;
+type StarterProps = { navigation: StarterScreenNavigationProp; }
 
 export function Starter() {
 

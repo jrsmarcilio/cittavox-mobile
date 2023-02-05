@@ -1,15 +1,13 @@
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { StackNavigationProp, StackScreenProps } from '@react-navigation/stack';
-
-import { Inter_400Regular, Inter_500Medium, useFonts } from '@expo-google-fonts/inter';
-import { FredokaOne_400Regular } from '@expo-google-fonts/fredoka-one';
+import { useCallback, useEffect, useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import * as SplashScreen from 'expo-splash-screen';
-import React, { useCallback, useEffect, useState } from 'react';
 
-import { AppRoutes } from './app.routes';
-import { TabNavigation } from '../components/TabNavigation';
+import { FredokaOne_400Regular } from '@expo-google-fonts/fredoka-one';
+import { Inter_400Regular, Inter_500Medium, useFonts } from '@expo-google-fonts/inter';
+import { Nunito_800ExtraBold } from '@expo-google-fonts/nunito';
+
 import { Starter } from '../screens/Starter';
-import { RootStackParamList } from '../@types/navigate';
+import { Login } from '../screens/Login';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -19,7 +17,8 @@ export function Routes() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
-    FredokaOne_400Regular
+    FredokaOne_400Regular,
+    Nunito_800ExtraBold
   });
 
   useEffect(() => {
@@ -43,7 +42,7 @@ export function Routes() {
     <NavigationContainer
       onReady={onLayoutRootView}
     >
-      <Starter />
+      <Login />
       {/* <AppRoutes /> */}
     </NavigationContainer>
   )
