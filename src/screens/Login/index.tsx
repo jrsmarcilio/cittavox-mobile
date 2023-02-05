@@ -23,8 +23,8 @@ export function Login() {
         </View>
 
         <View style={styles.contentInput}>
-          <TextInputIcon placeholder="E-mail" iosIcon="ios-mail" />
-          <TextInputIcon placeholder="Senha" iosIcon="md-lock-closed-outline" secureTextEntry />
+          <TextInputIcon placeholder="E-mail" iconName="ios-mail" />
+          <TextInputIcon placeholder="Senha" iconName="md-lock-closed-outline" secureTextEntry />
 
           <Pressable
             style={({ pressed }) => [
